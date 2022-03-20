@@ -121,7 +121,7 @@ public class Loan
         
         double totalFine = computeFine1();
                 
-        if (totalFine > 0)
+        if (totalFine >= 0)
         {
             System.out.println("\nTotal Fine generated: Rs " + totalFine);
 

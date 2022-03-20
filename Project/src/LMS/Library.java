@@ -525,22 +525,18 @@ public class Library {
     // Called when want an access to Portal
     public Person login()
     {
+       public Person login()
+    {
         Scanner input = new Scanner(System.in);
         
-        int id = 0;
+        string id = "0";
         String password = "";
         
         System.out.println("\nEnter ID: ");
         
-        try{
-            id = input.nextInt();
-        }
-        catch (java.util.InputMismatchException e)
-        {
-            System.out.println("\nInvalid Input");
-        }
-        
-        System.out.println("Enter Password: ");
+        id = input.next()
+      
+       System.out.println("Enter Password: ");
         password = input.next();
         
         for (int i = 0; i < persons.size(); i++)
