@@ -405,7 +405,7 @@ public class Library {
         double totalFine = 0;        
         double per_loan_fine = 0;
         
-        for (int i = 0; i < loans.size(); i++)
+        for (int i = 1; i < loans.size(); i++)
         {
             Loan l = loans.get(i);
             
